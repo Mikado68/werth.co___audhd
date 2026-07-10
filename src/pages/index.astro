@@ -1,0 +1,53 @@
+---
+import BurnoutProperty from "../components/BurnoutProperty.astro";
+
+import Layout from "../layouts/Layout.astro";
+
+import { defineCollection } from "astro:content";
+import { file } from "astro/loaders";
+
+const collections = defineCollection({
+  loader: file("src/data/burnout.json"),
+});
+
+const burnout = collections;
+---
+
+<Layout>
+  {
+    burnout.map((item) => (
+      <BurnoutProperty key={item.titre}>
+        <span slot="title">{item.titre}</span>
+        <ul slot="reasons">
+          <li>Surcharge sensorielle : trop de bruits, trop de promiscuité</li>
+          <li>
+            Stress d'anticipation : devoir prendre la parole en public, imprévus
+          </li>
+        </ul>
+        <table
+          slot="exemples"
+          border="1"
+          cellpadding="5"
+          style="border-collapse: collapse; border-width: 1; border-color: var(--beige-dark);width:max-content"
+        >
+          <tr>
+            <th>Exemples de situations</th>
+            <th>Pourquoi ? </th>
+            <th>Adaptations possibles</th>
+          </tr>
+          <ttable>
+            <ul slot="exemples2">
+              <li>Il y a trop de monde dans la salle pour la LENA</li>
+              <li>Devoir parler pour le community run</li>
+              <li>Présentation où</li>
+            </ul>
+            <span slot="impression">Il ne veut pas faire d'effort</span>
+            <span slot="real">Les ressources sociales sont épuisées</span>
+            <span slot="dont">Insister pour sa présence</span>
+            <span slot="do">Autoriser le retrait et la récupération</span>
+          </ttable>
+        </table>
+      </BurnoutProperty>
+    ))
+  }
+</Layout>

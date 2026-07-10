@@ -1,0 +1,45 @@
+[
+    {
+        "titre": "Refus de participer à une réunion ou un événement social",
+        "entoure_voit": "Il ne veut pas faire d'effort",
+        "passe_reelement": "Les ressources sociales sont épuisées",
+        "dont": "Insister pour sa présence",
+        "do": "Autoriser le retrait et la récupération",
+        "exemples": [
+            {
+                "situation": "Participation à la LENA",
+                "pourquoi": [
+                    "Surcharge sensorielle: trop de bruits (résonance, chuchotements), trop de promiscuité",
+                    "Fatigue sociale"
+                ],
+                "adaptations": [
+                    "Possibilité de participer à distance ou dans une pièce à part"
+                ]
+            },
+            {
+                "situation": "Devoir parler pour le community run",
+                "pourquoi": [
+                    "Fatigue sociale: parler devant un groupe est épuisant (gestion des codes, des imprévus, analyse des réactions, être le centre de l'attention)"
+                ],
+                "adaptations": [
+                    "Parler à ma place",
+                    "Me faire parler en premier"
+                ]
+            },
+            {
+                "situation": "Diriger une présentation ou un atelier",
+                "pourquoi": [
+                    "Épuisement cognitif lors de la préparation (tout est scripté)",
+                    "Fatigue sociale si le groupe est trop grand ou trop bruyant"
+                ],
+                "adaptations": [
+                    "Minimiser le nombre de participants (max 5)",
+                    "Soliciter une intervention en dernier recours"
+                ]
+            }
+        ]
+    },
+    {
+        "titre": "Refus de participer à une activité physique ou sportive"
+    }
+]

@@ -1,0 +1,46 @@
+---
+import {
+  Card,
+  Alert,
+  Typography,
+  CardContent,
+  CardHeader,
+  Grid,
+  Paper,
+  Stack,
+  Box,
+} from "@mui/material";
+
+const { title } = Astro.props;
+---
+
+<Stack direction="column" spacing={0} sx={{ height: "stretch" }}>
+  <Typography variant="overline" component="div">{title}</Typography>
+  <Paper
+    className="paper"
+    variant="outlined"
+    square
+    sx={{
+      padding: 2,
+      height: "stretch",
+    }}
+  >
+    <Typography variant="body1" component="div"><slot /></Typography>
+  </Paper>
+</Stack>
+
+<style>
+  .paper {
+    background-color: var(--beige-main);
+    color: var(--beige-dark);
+    border-color: var(--beige-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      margin: 0;
+      padding-left: 16px;
+    }
+  }
+</style>

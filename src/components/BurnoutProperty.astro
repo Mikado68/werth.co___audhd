@@ -1,0 +1,89 @@
+---
+import {
+  Card,
+  AlertTitle,
+  Alert,
+  Typography,
+  CardContent,
+  CardHeader,
+  Grid,
+  Paper,
+  Stack,
+} from "@mui/material";
+import BurnoutItem from "./BurnoutItem.astro";
+---
+
+<Grid size={12}>
+  <Card
+    variant="outlined"
+    sx={{
+      padding: 2,
+      backgroundColor: "var(--beige-light)",
+      border: 0,
+      borderRadius: 0,
+    }}
+  >
+    <Grid container spacing={2}>
+      <Grid size={12}>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{
+            padding: 2,
+            backgroundColor: "var(--lila-light)",
+            color: "var(--purple-dark)",
+            border: "1px solid var(--purple-dark)",
+          }}
+        >
+          <slot name="title" />
+        </Typography>
+      </Grid>
+
+      <Grid size={6}>
+        <BurnoutItem title="Ce que l'entourage voit souvent">
+          <slot name="impression" />
+        </BurnoutItem>
+      </Grid>
+
+      <Grid size={6}>
+        <BurnoutItem title="Ce qui se passe réellement">
+          <slot name="real" />
+        </BurnoutItem>
+      </Grid>
+
+      <Grid size={6}>
+        <BurnoutItem title="Origine">
+          <slot name="reasons" />
+        </BurnoutItem>
+      </Grid>
+
+      <Grid size={6}>
+        <BurnoutItem title="Exemples de situations">
+          <slot name="exemples" />
+        </BurnoutItem>
+      </Grid>
+
+      <Grid size={6}>
+        <Alert severity="error">
+          <AlertTitle>Don't</AlertTitle>
+          <Typography variant="h6"><slot name="dont" /></Typography>
+        </Alert>
+      </Grid>
+
+      <Grid size={6}>
+        <Alert severity="success">
+          <AlertTitle>Do</AlertTitle>
+          <Typography variant="h6"><slot name="do" /></Typography>
+        </Alert>
+      </Grid>
+    </Grid>
+  </Card>
+
+  <!-- <style>
+  .MuiPaper-root .MuiPaper-root {
+    background-color: rgb(84, 44, 129);
+    color: white;
+  }
+</style> -->
+</Grid>
