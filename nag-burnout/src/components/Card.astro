@@ -1,0 +1,98 @@
+---
+interface Props {
+  data: {
+    title?: string;
+    explanation?: string[];
+    examples?: Array<{
+      situation: string;
+      what_happens?: string[];
+    }>;
+  };
+}
+
+const { data } = Astro.props;
+const title = data.title ?? "Untitled";
+
+const { explanation, examples } = data;
+---
+
+<article class="card card-xl bg-base text-primary-content">
+  <span class="card-title text-primary-content">{title} </span>
+  <div class="card-body">
+    <!-- {explanation?.map((e) => <p>{e}</p>)} -->
+    <ul class="timeline timeline-vertical timeline-compact w-full">
+      {
+        explanation?.map((e) => (
+          <li>
+            {/* <hr />
+            <div class="timeline-middle">
+              <span class="bg-primary/20 flex size-4.5 items-center justify-center rounded-full">
+                <span class="badge badge-primary size-3 rounded-full p-0" />
+              </span>
+            </div> */}
+            <div class="timeline-end timeline-box w-full bg-secondary border-base-content text-base">
+              {e}
+            </div>
+            {/* <hr /> */}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div>Exemple de situations</div>
+  <ul class="timeline timeline-vertical timeline- w-full">
+    {
+      examples?.map(({ situation, what_happens }) => (
+        <li>
+          <div class="timeline-start timeline-box">{situation}</div>
+          <div class="timeline-middle">
+            <span class="bg-primary/20 flex size-4.5 items-center justify-center rounded-full">
+              <span class="badge badge-primary size-3 rounded-full p-0" />
+            </span>
+          </div>
+          <div class="timeline-end timeline-box">
+            {what_happens?.map((s) => (
+              <p>{s}</p>
+            ))}
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+  <!-- 
+  <table class="table">
+    <tr>
+      <th>Situation</th>
+      <th>Que se passe-t-il en moi ?</th>
+    </tr>
+    {
+      examples?.map((ex) => (
+        <tr>
+          <td>{ex.situation}</td>
+          <td class="flex-wrap">
+            {ex.what_happens?.map((s) => (
+              <p>{s}</p>
+            ))}
+          </td>
+        </tr>
+      ))
+    }
+  </table> -->
+</article>
+
+<style>
+  .card {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    /* background: white; */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #111827;
+  }
+</style>

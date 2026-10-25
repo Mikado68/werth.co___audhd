@@ -1,0 +1,12 @@
+title: "Pouvoir m'isoler"
+explanation:
+  - "Quand un effort trop intense a lieu, j'ai besoin de recharger les batteries."
+  - "Chez une personne dans la norme, la recharge se fait en fin de journée et la nuit."
+  - "Pour moi, j'ai besoin de plusieurs recharges par jour."
+examples:
+  - situation: "Réunion conflictuelle"
+    what_happens:
+      - "Sentir des tensions dans une réunion, même si je ne suis pas impliqué, peut générer un stress et mettre mon cerveau en mode sécurité, et donc devenir improductif."
+  - situation: "Divergence d'opinion sur une implémentation"
+    what_happens:
+      - "Argumenter et défendre son point de vue est extrêmement épuisant, car en plus d'argumenter, mon cerveau doit analyser la réaction de l'autre, le non verbal. Il se peut que dans ce cas, je laisse tomber ma position d'une manière qui peut sembler désinvolte, mais c'est juste mon cerveau qui fait un shutdown pour se concentrer sur les fonctions vitales."

@@ -1,0 +1,14 @@
+title: "Réduire le nombre de réunions ou leur durées"
+explanation:
+  - "Les réunions me demandent un effort de concentration supplémentaire pour analyser le non verbal, les sous-entendus et éliminer ce qui peut parasiter les sens."
+  - "Cet effort est accentué selon mon intérêt pour le sujet."
+examples:
+  - situation: "Participation passive (juste pour écouter)"
+    what_happens:
+      - "Mon intérêt baisse et la fatigue augmente au point de ne plus suivre la réunion. Mon cerveau se met en pause pour préserver l'énergie fonctionnelle."
+  - situation: "Sujet lointain ou imprécis"
+    what_happens:
+      - "Souvent en début de projet ou de concept, ces réunions manquent souvent de clarté et de structure, ou bien sont trop abstraites. Leur compréhension est pour moi un vrai défi"
+  - situation: "Réunions longues (>= 2h)"
+    what_happens:
+      - "Au bout d'une heure, la surcharge sensorielle et cognitive est déjà très présente et la concentration devient difficile."

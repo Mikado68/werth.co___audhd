@@ -1,5 +1,3 @@
-🟢🟡🔴
-
 # 🟡 Prendre le temps, ne pas précipiter la reprise
 
 La fatigue est persistante malgré une longue absence.

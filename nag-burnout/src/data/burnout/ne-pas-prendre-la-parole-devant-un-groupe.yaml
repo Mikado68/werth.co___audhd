@@ -1,0 +1,18 @@
+title: "Ne pas prendre la parole devant un groupe > 5 personnes"
+explanation:
+  - "Être le centre de l'attention est une source de surcharge cognitive et de stress d'anticipation."
+  - "À chaque intervention, mon cerveau analyse les réactions (communication non verbale, émotion) car je n'ai pas les codes."
+  - "Si je sens ou interprète mal que quelque chose ne va pas, mon cerveau va devoir fournir un effort supplémentaire pour s'adapter et pour que je ne perde pas mes moyens (gestion de l'imprévu difficile)."
+examples:
+  - situation: 'Expliquer une "Kugel" du community run génère un stress d''anticipation'
+    what_happens:
+      - "Mon cerveau ne pense plus qu'à ça et je script mon passage : je joue la phrase et la situation dans ma tête. Je suis moins concentré et je n'entends plus ce qui se passe plusieurs minutes avant de passer."
+  - situation: "Être celui qui va prendre la parole après un LENA engage"
+    what_happens:
+      - "De la même manière, je n'arrive pas à réfléchir au engage avant de savoir que je ne parlerai pas. L'angoisse monte et mon cerveau entre en mode survie."
+  - situation: "Préparer un Tech-Brunch / un cours"
+    what_happens:
+      - "Le travail préparatoire est très intense. Tout est scripté au mot près et je répète complètement plusieurs fois, pour ne pas laisser de place à l'imprévu. D'expérience, j'ai besoin de 3 à 4 fois plus de temps que ce qui est prévu. Par ex. on me demande de préparer une intervention ARC Circle (~2j) et ça va me coûter au minimum la semaine."
+  - situation: "Présenter un Tech-Brunch / un cours"
+    what_happens:
+      - "Pour parler d'un sujet, j'ai besoin d'être expert, de tout savoir ou comprendre pour ne pas laisser de place à l'imprévu. Si je dévie du script ou si je ne sais pas répondre à une question, mon cerveau va se bloquer et je perds mes moyens (bafouillement, perte de concentration, ...). Une fois terminé, mes batteries sont totalement épuisées."

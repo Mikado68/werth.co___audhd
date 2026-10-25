@@ -1,0 +1,16 @@
+title: "Porter des bouchons d'oreilles"
+explanation:
+  - "Le bruit est avec le toucher ma plus grande source d'hypersensibilité sensorielle."
+  - "J'ai toujours un casque à réduction de bruit (parfois insuffisant)."
+  - "Chaque son est interprété par mon cerveau de la même manière et avec la même priorité."
+  - "Mon cerveau fournit donc un effort supplémentaire pour traiter et prioriser ce parasitage, ce qui génère une fatigue et une surcharge sensorielle."
+examples:
+  - situation: "Open space trop bruyant"
+    what_happens:
+      - "Malgré un casque ANC, j'entends encore les bruits."
+  - situation: "Réunions"
+    what_happens:
+      - "Certains bruits (tapotement, chuchotements, appareils) peuvent déranger et réduire ma concentration."
+  - situation: "Lors des repas"
+    what_happens:
+      - "Au restaurant, mon cerveau se met parfois en shutdown (apparente absence). En salle de pause, si beaucoup de monde ou le bruit de la machine à café peuvent également être épuisant."

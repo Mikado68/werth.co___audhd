@@ -1,0 +1,15 @@
+title: "Plus de clarté dans les consignes / stories"
+explanation:
+  - "Le manque de précision crée de l'anxiété (que dois-je faire ? est-ce correct ? etc.)."
+  - "Mes capacités cognitives sont surchargées et mon cerveau peut se bloquer (manque de motivation, ne pas savoir par où commencer)."
+  - "Mon cerveau doit analyser l'implicite et le comprendre, ce qui entraîne une surcharge cognitive."
+examples:
+  - situation: "Une story mal définie"
+    what_happens:
+      - "Je ne vais pas la faire et prendre la suivante, ou alors je vais dépenser plus d'énergie."
+  - situation: "Une attente implicite"
+    what_happens:
+      - "Je ne sais pas ce qu'on attend de moi. Est-ce urgent ? Est-ce vraiment à moi de le faire ?"
+  - situation: "Consigne orale vs écrite"
+    what_happens:
+      - "Les consignes orales sont difficiles à gérer pour moi (se rappeler exactement ce qui a été dit, mauvaise interprétation). Les écrites (par mail ou chat) de manière claire apportent un cadre et demandent moins d'effort cognitif."

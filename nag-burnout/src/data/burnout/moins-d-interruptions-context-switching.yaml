@@ -1,0 +1,14 @@
+title: "Moins d'interruptions / Context switching"
+explanation:
+  - "Chaque interruption est un imprévu, ce qui augmente la surcharge cognitive."
+  - "Le traitement de cette interruption, sa priorisation et le retour à la tâche précédente sont également quelque chose de coûteux cognitivement."
+examples:
+  - situation: "Interruption au mauvais moment"
+    what_happens:
+      - "L'interruption lors d'un hyperfocus est très perturbante et peut empêcher le retour de la concentration plusieurs minutes. Si la tâche est de moindre intérêt, la motivation du retour à la tâche est d'autant plus grande."
+  - situation: "Question non urgente ou d'ordre privé"
+    what_happens:
+      - "Être interrompu pour quelque chose de non urgent ou déjà expliqué agit sur mes capacités cognitives et rend difficile la concentration et la motivation du retour au travail."
+  - situation: "Travailler sur plusieurs projets en même temps"
+    what_happens:
+      - "Cela crée une sensation de débordement et crée comme une paralysie. Je ne sais plus quoi faire ni dans quel ordre."

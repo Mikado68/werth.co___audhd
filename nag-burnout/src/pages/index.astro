@@ -1,41 +1,37 @@
 ---
-import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { getCollection } from "astro:content";
+
+const burnoutEntries = (await getCollection("burnout")).filter((entry) =>
+  Boolean(entry.data.title),
+);
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <div class="card sm:max-w-sm">
-      <div class="card-body">
-        <h5 class="card-title mb-0">Welcome to Our Platform</h5>
-        <div class="text-base-content/50 mb-6">Your journey starts here</div>
-        <p class="mb-4">
-          Explore a range of features and services designed to enhance your
-          experience. Join us and make the most out of what we have to offer.
-        </p>
-        <div class="card-actions">
-          <a href="#" class="link link-primary no-underline">Get Started</a>
-          <a href="#" class="link link-primary no-underline">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+<Layout>
+  <main>
+    <section class="grid space-y-8">
+      {burnoutEntries.map((entry) => <Card data={entry.data} />)}
+    </section>
+  </main>
+</Layout>
 
-<!-- Optional plugins -->
-<!-- <script is:inline src="../path/to/jquery/dist/jquery.min.js"></script>
-<script is:inline src="../path/to/lodash/lodash.js"></script>
-<script is:inline src="../path/to/datatables.net/js/dataTables.min.js"></script>
-<script is:inline src="../path/to/dropzone/dist/dropzone-min.js"></script>
-<script is:inline src="../path/to/nouislider/dist/nouislider.min.js"></script> -->
+<style>
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+  }
 
-<!-- FlyonUI -->
-<script is:inline src="../path/to/flyonui/flyonui.js"></script>
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #111827;
+  }
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+</style>
